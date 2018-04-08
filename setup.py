@@ -13,12 +13,12 @@ setup(
     # If your package is a single module, use this instead of 'packages':
     py_modules=['sogou_translate'],
     version='1.0.0',
-    description='The Python client for Sogou Translate Service',
+    description='The Python wrapper for Sogou Translate API',
     long_description=long_description,
     author='Daohan Chong',
     author_email='wildcat.name@gmail.com',
     url='https://github.com/imWildCat/sogou-translate',
-    download_url='https://github.com/imWildCat/sogou-translate/archive/0.1.tar.gz',
+    download_url='https://github.com/imWildCat/sogou-translate/archive/1.0.0.tar.gz',
     keywords=['translate', 'api', 'sougou'],
     classifiers=[
         # Trove classifiers
