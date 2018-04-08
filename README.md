@@ -18,10 +18,10 @@ Note: You might have to [apply for the keys](http://deepi.sogou.com/docs/fanyiQa
 ```python
 from sogou_translate import SogouTranslate, SogouLanguages
 
-sogou_translate = SogouTranslate('[Your pid]', '[Your secret key]')
+trans = SogouTranslate('[Your pid]', '[Your secret key]')
 
 en_text = 'Hello, world!'
-zh_text = sogou_translate.translate(en_text, from_language=SogouLanguages.EN, to_language=SogouLanguages.ZH_CHS)
+zh_text = trans.translate(en_text, from_language=SogouLanguages.EN, to_language=SogouLanguages.ZH_CHS)
 print(zh_text) # '你好，世界！'
 ```
 
