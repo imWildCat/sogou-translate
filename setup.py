@@ -1,12 +1,18 @@
 from setuptools import setup
 
+here = os.path.abspath(os.path.dirname(__file__))
+# Import the README and use it as the long-description.
+with io.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = '\n' + f.read()
+
 setup(
     name='sogou-translate',
     python_requires='>=3.6.0',
     # If your package is a single module, use this instead of 'packages':
     py_modules=['sogou_translate'],
-    version='0.1',
+    version='0.1.0',
     description='The Python client for Sogou Translate Service',
+    long_description=long_description,
     author='Daohan Chong',
     author_email='wildcat.name@gmail.com',
     url='https://github.com/imWildCat/sogou-translate',
