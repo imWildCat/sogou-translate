@@ -1,7 +1,8 @@
-Sogou-Translate
-===============
+Sogou-Translate |Build Status|
+==============================
 
-The Python wrapper for `Sogou Translate API`_. Only **Python 3.6** is
+The Python wrapper for `Sogou Translate
+API <http://deepi.sogou.com/docs/fanyiDoc>`__. Only **Python 3.6** is
 supported.
 
 Get started
@@ -13,7 +14,8 @@ You could install this library using ``pip``:
 
     pip install sogou-translate
 
-Note: You might have to `apply for the keys`_ in order to use the
+Note: You might have to `apply for the
+keys <http://deepi.sogou.com/docs/fanyiQa>`__ in order to use the
 service. If you wish to have a brief demo of this service, you could use
 the demo keys mentioned in the related web pages.
 
@@ -34,8 +36,7 @@ License
 -------
 
 The code is licensed under DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE.
-For more details, read the `LICENSE`_ file.
+For more details, read the `LICENSE <./LICENSE>`__ file.
 
-.. _Sogou Translate API: http://deepi.sogou.com/docs/fanyiDoc
-.. _apply for the keys: http://deepi.sogou.com/docs/fanyiQa
-.. _LICENSE: ./LICENSE
+.. |Build Status| image:: https://travis-ci.org/imWildCat/sogou-translate.svg?branch=master
+   :target: https://travis-ci.org/imWildCat/sogou-translate

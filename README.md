@@ -1,4 +1,4 @@
-Sogou-Translate
+Sogou-Translate [![Build Status](https://travis-ci.org/imWildCat/sogou-translate.svg?branch=master)](https://travis-ci.org/imWildCat/sogou-translate)
 ===
 
 The Python wrapper for [Sogou Translate API](http://deepi.sogou.com/docs/fanyiDoc). Only **Python 3.6** is supported.
