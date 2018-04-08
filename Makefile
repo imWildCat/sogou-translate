@@ -5,7 +5,7 @@ build:
 upload:
 	twine upload dist/*
 tag:
-	git tag $(TAG) -m $(MSG) && git push --tags origin master
+	git tag $(TAG) -m '$(MSG)' && git push --tags origin master
 delete-tag:
 	git tag --delete $(TAG) ; git push --delete origin $(TAG)
 gen-rst:
