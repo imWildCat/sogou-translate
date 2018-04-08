@@ -1,5 +1,5 @@
-Sogou-Translate |Build Status|
-==============================
+Sogou-Translate |Build Status| |codecov|
+========================================
 
 The Python wrapper for `Sogou Translate
 API <http://deepi.sogou.com/docs/fanyiDoc>`__. Only **Python 3.6** is
@@ -40,3 +40,5 @@ For more details, read the `LICENSE <./LICENSE>`__ file.
 
 .. |Build Status| image:: https://travis-ci.org/imWildCat/sogou-translate.svg?branch=master
    :target: https://travis-ci.org/imWildCat/sogou-translate
+.. |codecov| image:: https://codecov.io/gh/imWildCat/sogou-translate/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/imWildCat/sogou-translate
