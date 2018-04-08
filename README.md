@@ -3,6 +3,8 @@ Sogou-Translate [![Build Status](https://travis-ci.org/imWildCat/sogou-translate
 
 The Python wrapper for [Sogou Translate API](http://deepi.sogou.com/docs/fanyiDoc). Only **Python 3.6** is supported.
 
+![sogou_translate_logo](https://user-images.githubusercontent.com/2396817/38472358-b1b2aa96-3b76-11e8-85ec-bbd7b47fc3a8.png)
+
 ## Get started
 You could install this library using `pip`:
 
