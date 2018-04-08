@@ -1,4 +1,4 @@
-Sogou-Translate [![Build Status](https://travis-ci.org/imWildCat/sogou-translate.svg?branch=master)](https://travis-ci.org/imWildCat/sogou-translate) [![codecov](https://codecov.io/gh/imWildCat/sogou-translate/branch/master/graph/badge.svg)](https://codecov.io/gh/imWildCat/sogou-translate)
+Sogou-Translate [![Build Status](https://travis-ci.org/imWildCat/sogou-translate.svg?branch=master)](https://travis-ci.org/imWildCat/sogou-translate) [![codecov](https://codecov.io/gh/imWildCat/sogou-translate/branch/master/graph/badge.svg)](https://codecov.io/gh/imWildCat/sogou-translate) [![PyPI version](https://badge.fury.io/py/sogou-translate.svg)](https://badge.fury.io/py/sogou-translate)
 ===
 
 The Python wrapper for [Sogou Translate API](http://deepi.sogou.com/docs/fanyiDoc). Only **Python 3.6** is supported.
