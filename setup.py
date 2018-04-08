@@ -12,7 +12,7 @@ setup(
     python_requires='>=3.6.0',
     # If your package is a single module, use this instead of 'packages':
     py_modules=['sogou_translate'],
-    version='0.1.2',
+    version='1.0.0',
     description='The Python client for Sogou Translate Service',
     long_description=long_description,
     author='Daohan Chong',
