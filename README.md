@@ -4,7 +4,7 @@ Sogou-Translate
 The Python wrapper for [Sogou Translate API](http://deepi.sogou.com/docs/fanyiDoc). Only **Python 3.6** is supported.
 
 ## Get started
-You could install this library by `pip`:
+You could install this library using `pip`:
 
 ```shell
 pip install sogou-translate
@@ -25,4 +25,4 @@ print(zh_text) # '你好，世界！'
 
 ## License
 
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE. For more details, read the [LICENSE](./LICENSE) file.
+The code is licensed under DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE. For more details, read the [LICENSE](./LICENSE) file.
