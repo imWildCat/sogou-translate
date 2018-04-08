@@ -98,6 +98,16 @@ class SogouTranslate:
     SOGOU_API_URL = 'https://fanyi.sogou.com/reventondc/api/sogouTranslate'
 
     def __init__(self, pid: str, secret_key: str):
+        """Initialize SogouTranslate
+
+        Arguments:
+            pid {str} -- pid for this service
+            secret_key {str} -- secret key for this server
+
+        Raises:
+            SogouTranslateException -- while exeception occurs calling this service, detailed exception message will be provided.
+        """
+
         if (not pid) or (not secret_key):
             raise SogouTranslateException('pid or secret key cannot be empty')
 
@@ -105,14 +115,41 @@ class SogouTranslate:
         self.secret_key = secret_key
 
     def _generate_salt(self) -> str:
+        """Generate salt string
+
+        Returns:
+            str -- the salt string
+        """
+
         return crypt.mksalt(crypt.METHOD_SHA512)
 
-    def _compute_sign(self, source_text: str, salt: str):
+    def _compute_sign(self, source_text: str, salt: str) -> str:
+        """Compute the sign string according to Sogou's requirement (https://deepi.sogou.com/docs/fanyiDoc)
+
+        Arguments:
+            source_text {str} -- The text to be translated
+            salt {str} -- the salt string
+
+        Returns:
+            [str] -- The sign string
+        """
+
         text = self.pid + source_text + salt + self.secret_key
         return hashlib.md5(text.encode('utf-8')).hexdigest()
 
-    def _generate_data(self, source_text, from_language: SogouLanguages,
+    def _generate_data(self, source_text: str, from_language: SogouLanguages,
                        to_language: SogouLanguages):
+        """Generate the data for requesting the translating service
+
+        Arguments:
+            source_text {str} -- the text to be translated
+            from_language {SogouLanguages} -- the language type of source_text
+            to_language {SogouLanguages} -- the language for translation
+
+        Returns:
+            dict -- a dictionary containing the data to be posted to Sogou's API server
+        """
+
         salt = self._generate_salt()
         data = {
             'q': source_text,  # text
@@ -127,7 +164,20 @@ class SogouTranslate:
         return data
 
     def translate(self, source_text: str, from_language: SogouLanguages,
-                  to_language: SogouLanguages):
+                  to_language: SogouLanguages) -> str:
+        """The translate API
+
+        Arguments:
+            source_text {str} -- the text to be translated
+            from_language {SogouLanguages} -- the source language type
+            to_language {SogouLanguages} -- the target lanaguage type
+
+        Raises:
+            SogouTranslateException -- while exeception occurs calling this service, detailed exception message will be provided
+
+        Returns:
+            [str] -- the translated text
+        """
         if not source_text:
             raise SogouTranslateException('Source text does not exist')
 

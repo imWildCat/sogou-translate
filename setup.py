@@ -1,4 +1,5 @@
 import os
+import io
 from setuptools import setup
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -11,7 +12,7 @@ setup(
     python_requires='>=3.6.0',
     # If your package is a single module, use this instead of 'packages':
     py_modules=['sogou_translate'],
-    version='0.1.0',
+    version='0.1',
     description='The Python client for Sogou Translate Service',
     long_description=long_description,
     author='Daohan Chong',
