@@ -1,7 +1,8 @@
 default:
 	make gen-rst && make build && make upload
-build:
-	rm -rf dist && python setup.py bdist_wheel --universal
+build-package:
+	rm -rf dist
+	python setup.py bdist_wheel --universal
 upload:
 	twine upload dist/*
 tag:
