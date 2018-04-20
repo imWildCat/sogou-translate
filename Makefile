@@ -1,5 +1,7 @@
 default:
-	make gen-rst && make build && make upload
+	make gen-rst
+	make build-package
+	make upload
 build-package:
 	rm -rf dist
 	python setup.py bdist_wheel --universal
