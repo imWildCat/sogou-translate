@@ -12,7 +12,7 @@ setup(
     python_requires='>=3.6.0',
     # If your package is a single module, use this instead of 'packages':
     py_modules=['sogou_translate'],
-    version='1.0.0',
+    version='1.0.1',
     description='The Python wrapper for Sogou Translate API',
     long_description=long_description,
     author='Daohan Chong',
