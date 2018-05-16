@@ -1,7 +1,7 @@
 import requests
 import hashlib
 import json
-import crypt
+import random
 from enum import Enum
 
 ERROR_DICT = {
@@ -121,7 +121,7 @@ class SogouTranslate:
             str -- the salt string
         """
 
-        return crypt.mksalt(crypt.METHOD_SHA512)
+        return hashlib.sha256(str(random.getrandbits(256)).encode('utf-8')).hexdigest()
 
     def _compute_sign(self, source_text: str, salt: str) -> str:
         """Compute the sign string according to Sogou's requirement (https://deepi.sogou.com/docs/fanyiDoc)
