@@ -121,7 +121,7 @@ class SogouTranslate:
             str -- the salt string
         """
 
-        return hashlib.sha256(str(random.getrandbits(256)).encode('utf-8')).hexdigest()
+        return hashlib.sha256(str(random.getrandbits(256)).encode('utf-8')).hexdigest()[:19]
 
     def _compute_sign(self, source_text: str, salt: str) -> str:
         """Compute the sign string according to Sogou's requirement (https://deepi.sogou.com/docs/fanyiDoc)
