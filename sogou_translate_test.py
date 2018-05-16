@@ -1,4 +1,5 @@
 import pytest
+import os
 from sogou_translate import SogouTranslate, SogouLanguages, \
     SogouTranslateException
 import hashlib
@@ -6,8 +7,9 @@ import hashlib
 
 # Demo keys from: http://deepi.sogou.com/docs/fanyiQa
 # TODO: Use mock for testing
-SOGOU_PID = 'debc40e19e8f3675ee1f93b480ec3104'
-SOGOU_SKEY = '51b3cc5bb7d97d0c02e8bbd8fbbd84cd'
+SOGOU_PID = os.getenv('SOGOU_PID', defalut='debc40e19e8f3675ee1f93b480ec3104')
+SOGOU_SKEY = os.getenv(
+    'SOGOU_SKEY', defalut='51b3cc5bb7d97d0c02e8bbd8fbbd84cd')
 
 
 @pytest.fixture
